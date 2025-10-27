@@ -1,0 +1,1147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+
+html {
+ scroll-behavior: smooth;
+}
+/* Navbar CSS */
+nav {
+  display: flex;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.nav-list {
+  display: flex;
+  margin-left: auto; /* pushes nav items to the right */
+  list-style: none;
+  gap: 20px;
+  font-weight: 600;
+}
+.Nursery-Name{
+  font-size:1.2rem;
+  color : #2e7d32;
+    font-weight: 700;
+margin-top : 8px;
+margin-left:8px ;
+}
+.Nursery-Name:hover{
+  color: #43A047;
+  text-decoration: solid;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* This class hides the navbar by moving it up */
+.navbar--hidden {
+  transform: translateY(-100%);
+}
+/* style.css */
+/* style.css */
+
+/* ======================================= */
+/* === Light & Modern Welcome Section === */
+/* ======================================= */
+.welcome-light {
+    background-color: #ffffff; /* Clean white background */
+    text-align: center;
+    padding-top : 80px;
+    padding-bottom: 35px;
+    padding-right :  20px;
+    padding-left : 20px; /* Generous padding for a modern, airy feel */
+    border-bottom: 1px solid #f0f0f0; /* Subtle separator line */
+}
+
+.welcome-text {
+    max-width: 800px; /* Keeps the text from becoming too wide */
+    margin: 0 auto; /* Centers the container */
+}
+
+.welcome-text h1 {
+    font-family: 'Poppins', sans-serif; /* A decent, modern font */
+    font-size: 2.8rem;
+    font-weight: 600; /* A strong but not overly heavy weight */
+    color: #2c3e50; /* A professional, dark blue-grey instead of harsh black */
+    margin: 0 0 15px 0;
+    position: relative;
+    display: inline-block; /* Allows the pseudo-element to be positioned correctly */
+    padding-bottom: 10px;
+}
+
+/* The subtle, unique underline element */
+.welcome-text h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Width of the underline */
+    height: 4px; /* Thickness of the line */
+    background-color: #5d9cec; /* A trustworthy, calming blue */
+    border-radius: 5px;
+}
+
+/* Style for the "SNS" brand name */
+.welcome-text h1 strong {
+    color: #5d9cec; /* Matches the accent underline color */
+    font-weight: 700;
+}
+
+.welcome-text p {
+    font-size: 1.1rem;
+    color: #7f8c8d; /* A soft grey for the subtitle for good contrast */
+    line-height: 1.6; /* Improves readability */
+    max-width: 600px;
+    margin: 0 auto; /* Centers the paragraph text */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 2.2rem;
+    }
+    .welcome-text p {
+        font-size: 1rem;
+    }
+}
+
+
+/* carousel CSS */
+/* Make carousel nav buttons smaller */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 25px;     /* reduce size */
+  height: 25px;
+  background-size: 100% 100%;
+  filter: invert(100%); /* makes icons white (for dark backgrounds) */
+}
+
+/* Adjust button hit-area */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 1%;        /* smaller clickable width */
+}
+
+/* Optional: subtle hover effect */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+/* Caption Styling */
+.carousel-caption {
+  bottom: 20%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+.carousel-caption h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.carousel-caption p {
+  font-size: 0.5rem;
+}
+.carousel-caption {
+  bottom: 8%;
+  padding: 0.6rem;
+}
+
+.carousel-caption .btn {
+  font-size: 0.6rem;
+  padding: 4px 8px;
+}
+
+/* Categories Section CSS */
+.Categories-section {
+  background-color : #F8FAF8;
+}
+.Categories-section-main-heading{
+  color : #1B5E20;
+  text-align:center;
+  font-size:  2.25rem;
+  font-weight: bold;
+}
+.Categories-section-main-heading-tag-line {
+  color :#2A6440;
+  text-align :center;
+  font-size :1rem;
+  padding-bottom : 20px;
+  font-weight : 600px;
+}
+.pcs-card-body{
+  background-color: #ffffff;
+  height : 80%;
+  padding:10px !important;
+}
+/* Plant Card Section CSS */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+}
+.pcs-card-image{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius : 3px;
+}
+.pcs-card-title {
+  color : #2A6440;
+  font-size : 1.4rem;
+  font-weight : 600;
+  text-align : left;
+  margin : 5px;
+}
+.pcs-card-paragraph {
+  color : #336A29;
+  font-size : 0.85rem ;
+  text-align : left;
+  font-weight : 500;
+  margin-left : 5px;
+}
+.varieties span {
+  background: #e6f4ea;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 3px;
+  margin-left : 3px;
+  display: inline-block;
+  font-size: 0.6rem;
+  color: #256d3a;
+}
+.pcs-button {
+  display : inline;
+  font-size : 0.75rem ;
+  margin : 10px 0 0 0;
+  background : #256d3a;
+  color : #fff;
+  padding : 8px 8px;
+  border-radius : 8px;
+  text-decoration: none;
+  font-weight : bold;
+  width : 100%;
+  transition : 0.3s ease;
+  border-width : 0px;
+}
+.pcs-button:hover {
+  background-color : #43a037;
+  color : #ffffff;
+}
+
+
+/* View ALL Section CSS */
+.view-all-section{
+  background-image : url("images/carousel/view-all-section-banner-.jpg");
+  background-size : cover;
+  text-align :center;
+  height : 70vh;
+}
+.view-all-section-main-heading {
+  color : #21692e;
+  font-size : 3rem;
+  font-weight :bold;
+  color :#204F3C ;
+  text-align : center ;
+  font-style : Italic;
+  margin-top : 110px;
+}
+.section-header {
+  display: flex;                 
+  text-align : center  !important;
+  margin-bottom: 2rem;            
+  padding: 0 1rem; 
+
+}
+.view-all-section-card-heading {
+  font-weight : bold;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+.view-all-section-card-body{
+  background-color: #ffffff  ;
+  border-radius : 15px;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  padding : 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.view-all-section-card-body:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+}
+.view-all-section-card-body-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.view-all-button {
+  background :#2e7d32;
+  color : #ffffff;
+  text-align : center ;
+  height : 40px;
+  width : 200px;
+  transition : 0.3s ease;
+  border-width : 0px;
+  text-align: center;
+  margin-top : 20px;
+  margin-bottom : 20px;
+  margin-left: auto;
+  text-decoration : none;
+  border-radius : 8px;
+  font-weight : bold;
+  border-width : 0px;
+  font-size : 0.75rem;
+  align-items : center;
+  gap: 5px;
+  cursor : pointer;
+
+}
+.view-all-button:hover {
+  background-color: #43A047;
+  color : #ffffff;
+  border-width : 0px;
+}
+.view-all-icon {
+  width : 20px;
+  height : 20px;
+  color : #ffffff;
+}
+.navigate-button{
+  background-color : #256d3a;
+  color : #ffffff;
+  padding : 10px 12px;
+  border-radius : 8px;
+  text-decoration: none;
+  font-weight : bold;
+
+  transition : 0.3s ease;
+  border-width : 0px;
+  display : flex;
+  text-align: center;
+  margin : 10px;
+}
+.navigate-button:hover {
+  background-color: #43a037;
+  color : #ffffff;
+}
+.navigate-button:active {
+  transform: scale(0.95);
+  box-shadow : 0 4px 8px rgba(0 0 0 0.2);
+}
+.navigate-button:focus {
+  outline : none;
+  box-shadow : 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+.navigate-heading {
+  color : #2E7D32;
+  font-size : 2rem;
+  font-weight : 600;
+  text-align : center;
+  margin : 0px;
+  font-style : Italic;
+}
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-slide.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.go-back-button {
+  color :transparent;
+  border-radius: 8px;
+  border-width : 0px;
+color : #fff;
+}
+.go-back-button:hover{
+  background-color :green;
+  color : #ffffff;
+  border-width : 0px;
+  box-shadow :oklch(54.72% 0.10905 144.266) 0 4px 8px rgba(0 0 0 0.2);
+}
+
+/* Plant Categories Section Css */
+.category-heading {
+  color :#235347;
+  font-size: 2rem ;
+  text-decoration:wavy underline;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+ text-align: center;;
+}
+.view-all-button{
+  width : 120px;
+  height : 40px;
+  color : #ffffff;
+  text-align : center;
+  justify-content : center;
+  transition : 0.3s ease;
+  display: flex;
+  margin:10px ;
+  border-radius : 8px;
+  background : #256d3a;
+  border-width : 0px;
+  font-weight : 600;
+  font-size : 1rem;
+  align-items : center ;
+  gap : 5px;
+  cursor : pointer;
+}
+.view-all-button:hover {
+  background-color : #43a037;
+  color : #ffffff;
+  border-width : 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #f5f5f0;
+  font-family: Arial, sans-serif;
+}
+
+.plant-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.plant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.plant-card h5 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.plant-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-add {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #2E7D32;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-add:hover {
+  background: #43A047;
+  color: white;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.heart-icon:hover {
+  color: #2E7D32;
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: #2E7D32;
+  opacity: 0.6;
+transition : opacity 0.3s ease;
+margin : 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #169d1d;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #43A047;
+}
+
+
+
+
+
+
+
+/* --- category-navigating-section --- */
+.category-navigating-section {
+  background-color: #f4f6f3;
+}
+
+.category-button {
+  background-color: #2c5e3f;
+  color: #ffffff;
+  width : 100%;
+  padding : 10px;
+  margin : 2px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 0.65rem 1.25rem;
+}
+.category-button:hover {
+  background-color: #1a3a25;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.category-button i {
+  font-size: 0.9rem;
+}
+
+
+
+
+/*-- footer section --*/
+/* --- Footer Styling --- */
+footer a.text-white-50 {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+footer a.text-white-50:hover {
+  text-decoration: underline;
+  color: #ffffff !important; /* Make text pure white on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Why choose ua */
+/* --- Why Choose Us Section (WCU Naming) --- */
+.wcu-section {
+  background-color: #ffffff; /* A warm, natural off-white */
+  background-image: url('images/carousel/wcu-section-image.jpg');
+  background-size: cover;
+  width : 100%;
+  height : 100%;
+}
+.choose {
+  color : #F9E79F;
+  font-weight : bold;
+  font-size : 2.5rem;
+}
+.wcu-section-main-heading {
+  color : #FDFBF6;
+  font-size : 2.5rem;
+  font-weight : bold;
+  text-align :center;
+  margin-bottom : 10px;
+  padding-top : 20px;
+  font-family: 'Lora',serif;
+  text-decoration : underline;
+  text-underline-offset : 5px;
+}
+.wcu-card {
+  color : #000047;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin : 10px;
+}
+
+.wcu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.wcu-icon {
+  margin-bottom: 1.5rem;
+}
+
+.wcu-icon svg {
+  color: #2c5e3f; /* Your primary dark green color */
+  width: 48px;
+  height: 48px;
+}
+
+.wcu-card h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.wcu-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+
+
+
+
+/* Footer */
+/* --- Footer Styling --- */
+footer a.text-white-50 {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+footer a.text-white-50:hover {
+  text-decoration: underline;
+  color: #ffffff !important; /* Make text pure white on hover */
+}
+
+
+
+
+
+/* Contact Farm Section */
+.cus-title{
+  font-weight : bold ;
+  font-size : 2.4rem;
+  text-decoration : underline ;
+  text-underline-offset : 10px;
+  color : #2E7d32;
+  margin-top: 20px;margin-bottom : 10px;
+}
+.cus-tag {
+  font-size : 1rem;
+  color : #336A29;
+  font-weight : 500;
+  margin-bottom : 30px;
+  text-align: center;
+
+}
+/* --- Testimonial Card Styling --- */
+.testimonial-card {
+  border: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/*about us */
+/* --- Q&A About Us Section --- */
+.qa-item h4 {
+  font-family: 'Lora', serif;
+  color: #2c5e3f; /* Your primary dark green */
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.qa-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  border-left: 3px solid #e0e0e0; /* A subtle line to indent the answer */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --- Testimonial Card Styling --- */
+.testimonial-card {
+  border: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* --- "About Us" Page Styles --- */
+.about-hero {
+  margin-top: 40px;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/carousel/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.timeline-section { position: relative; }
+.timeline-section .timeline-icon::before {
+  content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 2px; height: 100%; background-color: #ddd; z-index: 1;
+}
+.timeline-item:last-child .timeline-icon::before { height: 50%; }
+.timeline-icon {
+  position: relative; z-index: 2; width: 50px; height: 50px;
+  background-color: #2c5e3f; color: #fff; border-radius: 50%;
+  display: inline-flex; justify-content: center; align-items: center;
+  font-size: 1.5rem; border: 3px solid #f8f9fa;
+}
+.timeline-content {
+  background-color: #fff; padding: 20px; border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+#wishlist-form button {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#wishlist-form button:hover {
+    background-color: #1b4d1e;
+}
+
+
+
+
+
+/* --- WhatsApp Floating Action Button (FAB) --- */
+.whatsapp-fab {
+  position: fixed; /* Makes it float */
+  bottom: 25px;
+  right: 25px;
+  
+  width: 60px;
+  height: 60px;
+  
+  background-color: #25D366; /* Official WhatsApp green */
+  color: #FFF;
+  
+  border-radius: 50%; /* Makes it a circle */
+  
+  /* Centers the icon inside the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 32px; /* Size of the WhatsApp icon */
+  
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it's on top of other content */
+  
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-fab:hover {
+  transform: scale(1.1); /* A little pop effect on hover */
+}
+
+
+
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa; /* Light grey background for the page */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* --- About Us Section Container --- */
+        .about-us-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%); /* Soft lime to white gradient */
+            overflow: hidden; /* Contains fading elements */
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Headings and Text --- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #FDFBF6; /* Deep forest green */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* --- Story Section --- */
+        .story-container {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .story-container h3 {
+            font-size: 2rem;
+            color: #387b51; /* A slightly lighter, vibrant green */
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .story-container p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        /* --- Mission & Vision Grid --- */
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .mission-card, .vision-card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(46, 96, 67, 0.12);
+        }
+
+        .mission-card h3, .vision-card h3 {
+            font-size: 1.8rem;
+            color: #2c5d3d;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .mission-card p, .vision-card p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* --- Values & Ethics Grid --- */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            background: #fff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .value-card:hover {
+            background-color: #e8f5e9; /* Light green on hover */
+            border-color: #a5d6a7;
+        }
+        
+        .value-icon {
+            font-size: 2.5rem; /* Make emoji icons larger */
+            line-height: 1;
+        }
+
+        .value-card h4 {
+            margin: 15px 0 10px 0;
+            font-size: 1.25rem;
+            color: #387b51;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 992px) {
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+            }
+            .mission-vision-grid {
+                grid-template-columns: 1fr; /* Stack mission/vision on tablets */
+            }
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-us-section {
+                padding: 60px 0;
+            }
+            .section-title {
+                font-size: 2.2rem;
+                flex-direction: column; /* Stack title and icon on mobile */
+                gap: 10px;
+            }
+            .section-intro, .story-container p {
+                padding: 0 15px;
+            }
+            .values-grid {
+                grid-template-columns: 1fr; /* 1 column for mobile */
+            }
+        }
+:root {
+            --primary-green: #387b51;
+            --dark-green: #2c5d3d;
+            --light-bg: #f8f9fa;
+            --text-color: #555;
+        }
+
+        /* Use elegant and readable fonts */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .about-section-container {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        /* Style for the main heading */
+        .about-title {
+            font-family: 'Lora', serif; /* A more elegant font for headings */
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: var(--dark-green);
+            margin-left: 15px; /* Space between icon and text */
+            text-align : center ;
+        }
+        
+        /* Style for the introductory paragraph */
+        .about-intro {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin-top: 1.5rem; /* Space below the main title */
+        }
+        
+        /* Style for the "Our Story" subheading */
+        .story-container h3 {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+            font-size: 1.75rem;
+            color: var(--primary-green);
+            margin-top: 2rem; /* More space to separate from the intro */
+            margin-bottom: 1rem;
+        }
+        
+        .story-container p {
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        /* Ensure the image has a nice visual effect */
+        .about-image {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .about-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .about-text-content {
+                text-align: center;
+            }
+            .about-title-wrapper {
+                justify-content: center; /* Center the title and icon on smaller screens */
+            }
+        }
+
+
+
+
+
+
+
+        /* --- Vibrant Heading Style (Why Choose Us) --- */
+.vibrant-heading {
+  font-family: 'Lora', serif; /* Classic font */
+  font-weight: 700;
+  font-size: 2.8rem; /* Font size for large screens */
+  color: #FFFFFF; /* Main text color (white) */
+  position: relative;
+  padding-bottom: 15px; /* Creates space for the underline */
+  margin-bottom: 2.5rem; /* Adds space below the heading */
+}
+
+/* This styles the "SNS" part */
+.vibrant-heading span {
+  /* This is your vibrant logo green. Change this hex code to your exact brand color. */
+  color: #34D399; 
+  font-weight: bold;
+}
+
+/* This creates the vibrant underline */
+.vibrant-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* How wide the underline is */
+  height: 4px;  /* How thick the underline is */
+  background-color: #34D399; /* Same vibrant green as the span */
+  border-radius: 2px; /* Softens the edges of the line */
+}
+
+/* Responsive font size for mobile */
+@media (max-width: 768px) {
+  .vibrant-heading {
+    font-size: 2rem;
+  }
+}
+
+/* --- Vibrant Heading Style --- */
+.vibrant-heading {
+  /* ... (keep all the other styles: font, color, padding, ::after underline) ... */
+}
+
+/* This is the new part for the span */
+.vibrant-heading span {
+  /* 1. Create a vibrant gradient */
+  background: linear-gradient(to right, #a7f3d0, #34d399); /* Light green to vibrant green */
+  
+  /* 2. Clip the background to the text shape */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* 3. Make the text color transparent to show the gradient */
+  color: transparent;
+  
+  /* 4. (Optional) Make the underline match */
+  /* If you like this, change your .vibrant-heading::after rule's background-color to:
+     background-image: linear-gradient(to right, #a7f3d0, #34d399);
+  */
+}
